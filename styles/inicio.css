@@ -1,0 +1,39 @@
+/* Seccio inicio */
+
+.inicio{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin: 40px 0;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.presentacion-contenedor{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 26px 45px;
+    justify-content: center;
+}
+
+.presentacion{
+    align-content: center;
+}
+
+.presentacion-p{
+    margin: 10px 0 0 0;
+    text-wrap: balance;
+}
+
+.redes{
+    display: inline-flex;
+    gap: 15px;
+    margin: 19px 0px;
+}
+
+.perfil{
+    width: 132px;
+    height: 166px;
+    border-radius: 30px;
+}
