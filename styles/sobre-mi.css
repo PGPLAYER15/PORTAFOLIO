@@ -7,3 +7,17 @@
     /* background: radial-gradient( rgb(8, 8, 49) , rgb(0, 0, 0)); */
 }
 
+.sobre-mi-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 0 0 15px 0;
+}
+
+.sobre-mi-p{
+    display: flex;
+    text-align: center;
+    text-wrap:balance;
+    padding: 0 30px;
+    font-size: 18px;
+}
