@@ -1,0 +1,33 @@
+/* Seccion forrrmacion */
+
+.formacion{
+    width: 100%;
+    height: 700px;
+}
+
+.Formacion-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 45px 0;
+
+}
+
+
+.Contenedor-de-cajas{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 53px 0px;
+}
+
+.caja-formaciones{
+    display: flex;
+    border: 2px solid black;
+    height: 240px;
+    width: 366px;
+    justify-content: center;
+    align-items: center;
+}
