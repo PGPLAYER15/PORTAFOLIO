@@ -19,8 +19,8 @@
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 53px 0px;
+    justify-content: center;
+    gap: 53px 92px;
 }
 
 .caja-formaciones{
