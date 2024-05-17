@@ -11,7 +11,7 @@ header{
     padding: 3px 0;
     height: 72px;
     font-size: 12px;
-    background-color: white;
+    background-color: #060C1E;
     text-align: center;
     justify-content: center
     
@@ -37,9 +37,22 @@ header{
     
 }
 
+.menu{
+    gap: 10PX;
+}
+
+
+.Link{
+    color: white;
+    text-decoration: none;
+    
+}
+.Link span{
+    display: none;
+}
 .menu-lista{
     display: flex;
-    gap: 10px;
+    gap: 25px;
     
     
 }

@@ -11,4 +11,7 @@
     src: url("public\fonts\Mont-ExtraLightDEMO.woff2") format("woff2"),
     url("public\fonts\Mont-ExtraLightDEMO.woff") format("woff");
 }
-
+body{
+    background: #0b132b;
+    color: #FCFCFC;
+}

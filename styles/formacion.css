@@ -25,9 +25,10 @@
 
 .caja-formaciones{
     display: flex;
-    border: 2px solid black;
+    border: 4px solid black;
     height: 240px;
     width: 366px;
     justify-content: center;
     align-items: center;
+    background: #686868;
 }
