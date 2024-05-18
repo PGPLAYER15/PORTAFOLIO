@@ -6,6 +6,7 @@
 @import url('./formacion.css');
 @import url('./proyectos.css');
 @import url('./formulario.css');
+@import url('./footer.css');
 
 @font-face {
     font-family: "Mont ExtraLightDEMO";
@@ -15,4 +16,5 @@
 body{
     background: #0b132b;
     color: #FCFCFC;
+    height: 4500px;
 }

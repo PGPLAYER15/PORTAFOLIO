@@ -14,7 +14,7 @@ form{
     box-shadow: 0 0 20px rgba(0,0,0,0);
     border-radius: 20px ;
     text-align: center;
-    width: 340px;
+    width: 215px;
     background: #1c2541;;
 }
 
@@ -24,9 +24,10 @@ form{
     text-align: left;
 }
 
-h2{
+.titulo-form{
     color: rgba(255, 255, 255, 0.651);
     font-size: 35px;
+    padding-bottom: 25px;
 }
 
 label{
