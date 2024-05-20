@@ -39,3 +39,25 @@
 .Skill-hobbie-boxs:hover{
     background: #7b7c80;
 }
+
+@media(min-width:1024px){
+
+    .titulo-skills{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .Skill-hobbie-boxs{
+        display: flex;
+        border: 2px solid black;
+        margin: 5px 10px;
+        padding: 5px 0;
+        width: 204px;
+        height: 163px;
+        background: #3F4045;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

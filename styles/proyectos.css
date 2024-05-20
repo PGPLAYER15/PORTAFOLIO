@@ -44,3 +44,27 @@
     gap: 10px;
     padding: 10px 0;
 }
+
+@media(min-width:1024px){
+
+    .titulo-experiencia{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .caja-experiencia{
+        display: flex;
+    }
+
+    .img-exp{
+        height: 352px;
+        width: 510px;
+    }
+
+    .caja-experiencia-container{
+        gap: 55px 349px;
+        justify-content: center;
+        margin: 42px 152px 30px 152px
+
+    }
+}

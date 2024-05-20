@@ -42,3 +42,20 @@
     border-radius: 30px;
     margin: 0px 0px 35px 0;
 }
+
+
+@media(min-width:1024px){
+
+    .presentacion{
+        font-size: 20px;
+        font-weight:600;
+    }
+
+    .presentacion-p{
+        font-size: 20px;
+    }
+
+    .redes{
+        gap: 40px;
+    }
+}

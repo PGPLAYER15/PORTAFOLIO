@@ -57,3 +57,20 @@ header{
     
 }
 
+/* Para Computadoras  */
+
+@media(min-width:1024px){
+    
+
+    .menu-lista{
+        display: flex;
+        gap: 131px;
+    }
+
+    .Link span{
+        display: flex;
+        text-align: center;
+        padding-top: 5px;
+        font-size: 15px;
+    }
+}
