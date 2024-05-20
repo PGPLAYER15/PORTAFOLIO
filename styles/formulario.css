@@ -64,3 +64,8 @@ input::placeholder , textarea::placeholder{
     background-color: #0f1424;
 }
 
+@media(min-width:1024px){
+    form{
+        width: 600px;
+    }
+}

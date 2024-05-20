@@ -45,6 +45,18 @@
     padding: 10px 0;
 }
 
+.logos-exp{
+    display: flex;
+    margin: 10px 0px 6px 0px;
+    gap: 10px;
+}
+
+.links{
+    display: flex;
+    gap: 11px;
+    padding: 8px 0px;
+}
+
 @media(min-width:1024px){
 
     .titulo-experiencia{
@@ -62,7 +74,7 @@
     }
 
     .caja-experiencia-container{
-        gap: 55px 349px;
+        gap: 100px 354px;
         justify-content: center;
         margin: 42px 152px 30px 152px
 
