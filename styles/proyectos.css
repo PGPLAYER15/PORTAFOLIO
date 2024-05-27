@@ -80,3 +80,9 @@
 
     }
 }
+
+@media(max-width:1024px){
+    .experiencia{
+        margin-top: 120px;
+    }
+}

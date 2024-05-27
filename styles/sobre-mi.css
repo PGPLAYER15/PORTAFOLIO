@@ -34,3 +34,9 @@
         padding: 18px 517px;
     }
 }
+
+@media(max-width:1024px){
+    .sobre-mi-p{
+        padding: 18px 141px;
+    }
+}

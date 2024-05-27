@@ -26,3 +26,15 @@
     align-content: center;
     justify-content: center;
 }
+
+@media(max-width:1024px){
+
+    .contenedor-hobbie{
+        margin-bottom: 120px;
+    }
+
+    .titulo-hobbies{
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
