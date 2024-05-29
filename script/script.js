@@ -1,54 +1,35 @@
-window.onload = () => {
-    let links = document.querySelectorAll('.Link');
-    
-    // Añadimos eventos de click a cada link
-    links.forEach((link, index) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-            scrollSuave(link.getAttribute('href'), 500, 78);
-        });
+window.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.Link');
+    const firstLink = links[0];
+
+    // Agregar un solo event listener al primer enlace
+    firstLink.addEventListener('click', () => {
+        console.log("a")
+        smoothScroll('#seccion-sobre-mi', 500, 86); // Utiliza el valor de compensación adecuado
     });
-};
+});
 
-const scrollSuave = (objetivo, duracion, compensacion) => {
-    let elemObj = document.querySelector(objetivo);
-    let elemPos = elemObj.getBoundingClientRect().top - compensacion;
-    let posInicial = window.pageYOffset;
-    let tiempoInicial = null;
+const smoothScroll = (target, duration, offset) => {
+    console.log("b")
+    const targetElement = document.querySelector(target);
+    const targetPosition = targetElement.getBoundingClientRect().top - offset;
+    const startPosition = window.pageYOffset;
+    const startTime = null;
 
-    const animacion = tiempoAhora => {
-        if (tiempoInicial === null) tiempoInicial = tiempoAhora;
-        let tiempoPasado = tiempoAhora - tiempoInicial;
-        let auxAnimacion = easeInOutQuad(tiempoPasado, posInicial, elemPos, duracion);
-        window.scrollTo(0, auxAnimacion);
-        if (tiempoPasado < duracion) requestAnimationFrame(animacion);
+    const animation = (currentTime) => {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = easeInOutQuad(timeElapsed, startPosition, targetPosition, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
     };
 
-    requestAnimationFrame(animacion);
+    requestAnimationFrame(animation);
 };
 
 const easeInOutQuad = (t, b, c, d) => {
     t /= d / 2;
-    if (t < 1) return c / 2 * t * t + b;
+    if (t < 1) return (c / 2) * t * t + b;
     t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
 };
-
-/* const links = document.querySelectorAll('.Link');
-links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        const targetPosition = targetElement.getBoundingClientRect().top;
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const targetId = '#seccion-inicio';
-    const targetElement = document.querySelector(targetId);
-    const targetPosition = targetElement.getBoundingClientRect().top;
-    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-});
- */
