@@ -9,10 +9,14 @@
 @import url('./footer.css');
 
 @font-face {
-    font-family: "Mont ExtraLightDEMO";
+    font-family: "Mont-ExtraLightDEMO";
     src: url("public\fonts\Mont-ExtraLightDEMO.woff2") format("woff2"),
     url("public\fonts\Mont-ExtraLightDEMO.woff") format("woff");
+    
+    font-display: swap;
 }
+
+
 body{
     background: #0b132b;
     color: #FCFCFC;

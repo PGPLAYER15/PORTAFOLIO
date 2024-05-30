@@ -3,20 +3,23 @@
 .contenedor-hobbie{
     display: flex;
     width: 100%;
-    height: 400px;
-    margin: 40px 0;
+    height: 545px;
+    margin: 0px 0 40px 0;
     flex-direction: column;
+    background-color: #1c2541;
+    justify-content: center;
 }
 
 .titulo-hobbies{
 
     display: flex;
     justify-content: center;
-    font-size: 30px;
-    padding: 35px 0;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0px 0 35px 0;
     
 }
-
+    
 .linea-hobbies{
     display: flex;
     flex-direction: row;
@@ -34,7 +37,7 @@
     }
 
     .titulo-hobbies{
-        font-size: 40px;
+        font-size: 0px;
         font-weight: 600;
     }
 }

@@ -25,8 +25,9 @@ form{
 }
 
 .titulo-form{
-    color: rgba(255, 255, 255, 0.651);
+    color:white;
     font-size: 35px;
+    font-weight: 600;
     padding-bottom: 25px;
 }
 
