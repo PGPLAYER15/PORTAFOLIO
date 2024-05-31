@@ -2,6 +2,7 @@ header{
     background-color: #2A2D34;
     color: white;
     height: 58px
+    
 }
 
 .contenedor-cabecera{
@@ -13,8 +14,7 @@ header{
     font-size: 12px;
     background-color: #060C1E;
     text-align: center;
-    justify-content: center
-    
+    justify-content: center;    
 }
 
 .cabecera{

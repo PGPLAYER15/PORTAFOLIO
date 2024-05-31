@@ -303,10 +303,10 @@
                     <div class="formulario-group">
                         <form>
                             <label for="name">Nombre</label>
-                            <input type="text" name="name" id="name" placeholder="nombre y apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios" required>
+                            <input type="text" name="name" id="name" placeholder="nombre y apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios" required minlength="3">
                     
                             <label for="telefono">Telefono</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Telefono" pattern="[0-9]{10}" title="Debe contener 10 dígitos" required>
+                            <input type="tel" name="phone" id="phone" placeholder="Telefono" pattern="[0-9]{10}" title="Debe contener 10 dígitos" required maxlength="10" minlength="10">
                     
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" placeholder="Email" required>
